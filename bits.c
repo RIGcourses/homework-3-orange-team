@@ -1,7 +1,7 @@
 /* 
  * CS:APP Data Lab 
  * 
- * <Please put your name and userid here>
+ * Griselda Arguello, garguello@luc.edu - Alena Lunkina, alunkina@luc.edu>
  * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -174,7 +174,9 @@ NOTES:
  *   Rating: 1
  */
 int bitNor(int x, int y) {
-  return 2;
+  return (~x)&(~y); //bitNOR is an exclusive OR gate (only true
+  //(~x) and (~y) --->negation of x and y
+  //Since Nor is the same as "Not OR", we use negation of both x and y
 }
 /* 
  * bitXor - x^y using only ~ and & 
