@@ -187,7 +187,7 @@ int bitNor(int x, int y) {
  */
 int bitXor(int x, int y) {
  ;  //bitXOR exclusive OR gate (only true when 1 element is true and the other false) 
-  int a = ~x & y;  //not x and not y = 0 or 1
+  int a = ~x & y;  //not x and y = 0 or 1
   int b = x & ~y;  //x and not y = 1 or 0
   return ~(~a&~b);
 }
