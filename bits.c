@@ -198,7 +198,7 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmax(void) {
-  return 2;
+  return ~(1 << 31);  // max bits are 32 maximimum minimums 0 used the pdf 03integers (Alena)
 }
 /* 
  * isNotEqual - return 0 if x == y, and 1 otherwise 
@@ -208,7 +208,7 @@ int tmax(void) {
  *   Rating: 2
  */
 int isNotEqual(int x, int y) {
-  return 2;
+  return ;
 }
 /* 
  * copyLSB - set all bits of result to least significant bit of x
@@ -218,7 +218,7 @@ int isNotEqual(int x, int y) {
  *   Rating: 2
  */
 int copyLSB(int x) {
-  return 2;
+  return ;
 }
 /* 
  * rotateRight - Rotate x to the right by n
@@ -229,7 +229,7 @@ int copyLSB(int x) {
  *   Rating: 3 
  */
 int rotateRight(int x, int n) {
-  return 2;
+  return ;
 }
 /* 
  * isNonNegative - return 1 if x >= 0, return 0 otherwise 
