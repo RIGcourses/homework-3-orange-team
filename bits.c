@@ -198,7 +198,7 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmax(void) {
-  return ~(1 << 31);  // max bits are 32 maximimum minimums 0 used the pdf 03integers)
+  return ~(1 << 31);  // Mmax bits are 32 with 0 bits minimum (used the pdf 03integers)
 }
 /* 
  * isNotEqual - return 0 if x == y, and 1 otherwise 
