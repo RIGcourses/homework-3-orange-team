@@ -208,7 +208,7 @@ int tmax(void) {
  *   Rating: 2
  */
 int isNotEqual(int x, int y) {
-  return !!(x^y);  //We both agreed it was not x and y but guessed to add ! twice after only 1 failed
+  return !!(x^y);  //We both agreed it was NOT x AND y but guessed to add ! twice after only 1 failed
 }
 /* 
  * copyLSB - set all bits of result to least significant bit of x
@@ -218,7 +218,9 @@ int isNotEqual(int x, int y) {
  *   Rating: 2
  */
 int copyLSB(int x) {
-  return ;
+  return (x << 31) >> 31;  //Alena figured it out: 
+	//First we use left shift to move (least significant = 0) and move it to the beginning.
+	//Then we use right shift to  switch all integers to zero
 }
 /* 
  * rotateRight - Rotate x to the right by n
@@ -229,7 +231,8 @@ int copyLSB(int x) {
  *   Rating: 3 
  */
 int rotateRight(int x, int n) {
-  return ;
+  
+  return;  //
 }
 /* 
  * isNonNegative - return 1 if x >= 0, return 0 otherwise 
