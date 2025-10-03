@@ -208,7 +208,7 @@ int tmax(void) {
  *   Rating: 2
  */
 int isNotEqual(int x, int y) {
-  return ;
+  return !!(x^y);  //We both agreed it was not x and y but guessed to add ! twice after only 1 failed
 }
 /* 
  * copyLSB - set all bits of result to least significant bit of x
