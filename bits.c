@@ -231,7 +231,10 @@ int copyLSB(int x) {
  *   Rating: 3 
  */
 int rotateRight(int x, int n) {
-  
+  int shift =   //we couldn't figure out more past this
+  int right = x >> n
+  int left = x << n
+
   return;  //
 }
 /* 
