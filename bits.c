@@ -198,7 +198,7 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmax(void) {
-  return ~(1 << 31);  // Mmax bits are 32 with 0 bits minimum (used the pdf 03integers)
+  return ~(1 << 31);  // Max bits are 32 with 0 bits minimum (used the pdf 03integers)
 }
 /* 
  * isNotEqual - return 0 if x == y, and 1 otherwise 
@@ -242,5 +242,5 @@ int rotateRight(int x, int n) {
  *   Rating: 3
  */
 int isNonNegative(int x) {
-  return 2;
+  return !(x >> 31);  //x shifts right, exclamation mark turns zero into one and otherwise zero
 }
